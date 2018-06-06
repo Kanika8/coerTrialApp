@@ -23,7 +23,7 @@ public class TodoAddActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_todo);
 
         datePicker = (DatePicker)findViewById(R.id.datePicker);
-
+//lorem
         Calendar calendar = Calendar.getInstance();
 
         calendar.setTimeInMillis(System.currentTimeMillis());
