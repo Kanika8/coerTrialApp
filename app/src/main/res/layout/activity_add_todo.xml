@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:inputType="textLongMessage"
+            android:textColor="#000000"
+            android:id="@+id/todoInput"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:layout_below="@+id/todoInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"></DatePicker>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datePicker"
+            android:layout_marginTop="10dp"
+            android:id="@+id/priorityLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:id="@+id/textPriority"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priority"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:numStars="5"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
